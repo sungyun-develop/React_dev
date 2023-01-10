@@ -2,6 +2,14 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "lint-staged": {
+    "*.js": ["eslint . --fix", "prettier --write"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -34,5 +42,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "8.0.3",
+    "lint-staged": "^13.1.0"
   }
 }
