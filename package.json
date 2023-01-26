@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "lint-staged": {
-    "*.js": ["eslint . --fix", "prettier --write"]
+    "*.js": [
+      "eslint . --fix",
+      "prettier --write"
+    ]
   },
   "husky": {
     "hooks": {
