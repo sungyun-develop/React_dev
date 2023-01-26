@@ -2,3 +2,9 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 35px;
 }
+
+.list {
+  background-color: turquoise;
+  border: solid 1px;
+  border-radius: 5px;
+}
