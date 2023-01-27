@@ -23,6 +23,7 @@ function Home() {
         <h1>Loading...</h1>
       ) : (
         <div>
+          <h1>Movie World</h1>
           {listMovie.map((movie) => (
             <Movie
               key={movie.id}
