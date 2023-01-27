@@ -1,5 +1,3 @@
-import Button from "./Button";
-import styled from "./App.module.css";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -14,8 +12,10 @@ function App() {
     setListMovie(json.data.movies);
     setLoading(false);
   };
-  useEffect(() => {}, []);
-  console.log(listMovie);
+  useEffect(() => {
+    getMovies();
+  }, []);
+
   return (
     <div>
       {loading ? (
