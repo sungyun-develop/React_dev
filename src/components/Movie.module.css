@@ -1,0 +1,36 @@
+.moviestyle {
+  width: 250px;
+  max-height: 500px;
+  background-color: antiquewhite;
+  border: 3px solid greenyellow;
+  border-radius: 5px;
+  margin: 10px 20px;
+  padding: 30px;
+}
+
+.moviestyle_img {
+  position: relative;
+  top: -20px;
+  width: 100%;
+  box-shadow: 10px 10px 10px #888888;
+}
+
+.moviestyle_img:hover {
+  transform: translateY(-10px);
+  transition: transform 0.5s;
+}
+
+.moviestyle_title {
+  font-family: monospace;
+}
+
+.moviestyle_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moviestyle_list > li {
+  width: 50%;
+  list-style-type: none;
+  margin-right: 0px;
+}
