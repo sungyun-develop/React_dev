@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import styled from "./DetailMovie.module.css";
 
 function DetailMovie({ coverImg, title, year, downloadCount }) {
   return (
     <div>
       <img src={coverImg} alt="title" />
-      <h2>{title}</h2>
+      <h2 className={styled.title}>{title}</h2>
       <p>{year}</p>
       <span>{`total download 수 : ${downloadCount}`} </span>
     </div>
