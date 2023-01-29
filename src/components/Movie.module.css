@@ -24,6 +24,17 @@
   font-family: monospace;
 }
 
+.moviestyle_title a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5 ease-in-out;
+}
+
+.moviestyle_title a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
 .moviestyle_list {
   display: flex;
   flex-wrap: wrap;

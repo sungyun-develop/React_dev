@@ -32,15 +32,18 @@ function Home() {
         <div>
           <div className={styled.menu}>
             <h1 className={styled.menu_title}>MovieTube</h1>
-            <span>평점? :</span>
-            <input
-              type="range"
-              min="0"
-              max="10"
-              value={range}
-              onChange={onChange}
-            ></input>
+            <div className={styled.score}>
+              <span>최소 평점? : {range}</span>
+              <input
+                type="range"
+                min="0"
+                max="10"
+                value={range}
+                onChange={onChange}
+              ></input>
+            </div>
           </div>
+          <h2>영화 소개입니다.</h2>
           <div className={styled.container}>
             {listMovie.map((movie) => (
               <Movie
